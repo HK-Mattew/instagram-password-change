@@ -93,8 +93,15 @@ class ChangePassword:
             
 
 
+# ChangePassword(
+#     login='E-mail/Username',
+#     password='Password',
+#     new_password='New_password'
+#     )
+
+import os
 ChangePassword(
-    login='E-mail/Username',
-    password='Password',
-    new_password='New_password'
+    login=os.environ['login'],
+    password=os.environ['password'],
+    new_password=os.environ['new_password']
     )
